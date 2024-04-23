@@ -1,6 +1,6 @@
-# Steganografi LSB (Least Significant Bit)
+# Steganografi LSB (Least Significant Bit) Dasar
 
-Steganografi LSB merupakan salah satu teknik steganografi yang paling sederhana dan umum digunakan. Teknik ini memanfaatkan bit paling tidak signifikan dari nilai piksel dalam gambar untuk menyembunyikan informasi tambahan, seperti pesan teks. Meskipun sederhana, steganografi LSB tetap efektif karena perubahan pada bit paling tidak signifikan umumnya tidak terlihat secara visual pada gambar.
+Steganografi LSB merupakan salah satu teknik steganografi yang paling sederhana dan umum digunakan. Teknik ini memanfaatkan bit paling tidak signifikan dari nilai piksel dalam gambar untuk menyembunyikan informasi tambahan, seperti pesan teks. Meskipun sederhana, steganografi LSB tetap efektif karena perubahan pada bit paling tidak signifikan umumnya tidak terlihat secara visual pada gambar. Pustaka yang digunakan sangat dasar, hanya menggunakan PIL dan numpy.
 
 ## Teknik Steganografi LSB
 
