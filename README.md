@@ -18,15 +18,13 @@ Dalam LSB, pesan teks atau data lainnya disematkan ke dalam gambar dengan mengub
 
 ## Penjelasan Kode Python
 
-Berikut adalah penjelasan untuk setiap bagian kode Python yang signifikan dalam eksekusi program tersebut:
-
 ### Membaca Gambar
 
 ```python
 def tambah_gambar(image_path):
     return np.array(Image.open(image_path))
 ```
-Fungsi tambah_gambar digunakan untuk membaca gambar dari file yang ditentukan dan mengonversinya menjadi array NumPy. Ini dilakukan dengan menggunakan modul PIL (Python Imaging Library) dan NumPy.
+Fungsi tambah_gambar digunakan untuk membaca gambar dari file yang ditentukan dan mengonversinya menjadi array NumPy dengan menggunakan modul PIL (Python Imaging Library) dan NumPy.
 
 ### Konversi pesan ke Biner
 ```python
