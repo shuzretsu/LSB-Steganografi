@@ -28,7 +28,7 @@ def tambah_gambar(image_path):
 ```
 Fungsi tambah_gambar digunakan untuk membaca gambar dari file yang ditentukan dan mengonversinya menjadi array NumPy. Ini dilakukan dengan menggunakan modul PIL (Python Imaging Library) dan NumPy.
 
-##Konversi pesan ke Biner
+### Konversi pesan ke Biner
 ```python
 def teks_binary(text):
     binary_message = ''.join(format(ord(char), '08b') for char in text)
@@ -36,7 +36,7 @@ def teks_binary(text):
 ```
 Fungsi teks_binary mengonversi pesan teks menjadi representasi biner. Setiap karakter dalam pesan diubah menjadi representasi biner dengan panjang 8 bit (byte).
 
-##Menyembunyikan Pesan dalam Gambar
+### Menyembunyikan Pesan dalam Gambar
 ```python
 def pesan_tersembunyi(im, pesan_biner):
     index = 0
@@ -52,7 +52,7 @@ def pesan_tersembunyi(im, pesan_biner):
 ```
 Fungsi pesan_tersembunyi menyembunyikan pesan biner dalam gambar menggunakan teknik LSB. Setiap bit pesan disematkan ke bit paling tidak signifikan dari nilai piksel dalam gambar.
 
-##Ekstraksi Pesan Tersembunyi
+### Ekstraksi Pesan Tersembunyi
 ```python
 def ekstrak_pesan(pesan_tersembunyi):
     pesan_biner = ""
@@ -72,8 +72,7 @@ def ekstrak_pesan(pesan_tersembunyi):
 ```
 Fungsi ekstrak_pesan digunakan untuk mengekstrak pesan yang disembunyikan dari gambar stego. Ini mengekstrak bit paling tidak signifikan dari setiap nilai piksel dalam gambar dan mengonversinya kembali menjadi pesan biner.
 
-##
-##Ekstraksi Pesan Tersembunyi dan Konversi ke Teks
+### Ekstraksi Pesan Tersembunyi dan Konversi ke Teks
 ```python
 # ekstraksi pesan
 ex_pesan = ekstrak_pesan(sembunyikan_pesan)
@@ -85,9 +84,9 @@ def binary_to_text(pesan_biner):
         text += chr(int(byte, 2))
     return text
 ```
-`def binary_to_text(pesan_biner):`definisi dari fungsi binary_to_text bertugas mengonversi pesan dalam format biner menjadi teks yang dapat dibaca.
-`for i in range(0, len(pesan_biner), 8):` Perulangan dilakukan setiap 8 bit (1 byte) dalam pesan biner.
-`byte = pesan_biner[i:i + 8]:` Setiap 8 bit biner diambil dari pesan biner.
+`def binary_to_text(pesan_biner):`definisi dari fungsi binary_to_text bertugas mengonversi pesan dalam format biner menjadi teks yang dapat dibaca.<br>
+`for i in range(0, len(pesan_biner), 8):` Perulangan dilakukan setiap 8 bit (1 byte) dalam pesan biner.<br>
+`byte = pesan_biner[i:i + 8]:` Setiap 8 bit biner diambil dari pesan biner.<br>
 `text += chr(int(byte, 2)):` lalu setiap byte biner diubah menjadi bilangan bulat dan kemudian diubah menjadi karakter ASCII yang sesuai. Karakter-karakter ini ditambahkan ke variabel text.
 
-##Terima Kasih
+### Terima Kasih
